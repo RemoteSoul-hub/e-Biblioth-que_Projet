@@ -38,18 +38,22 @@
                         </div>
                          <label>Adresse Courriel</label>
                          <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Votre adresse Courriel" TextMode="email"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Votre adresse Courriel" TextMode="Email"></asp:TextBox>
                         </div>
                          <div class="row">
                      <div class="col">
                         <hr>
                      </div>
                   </div>
-                        <div class="form-group mx-auto">
-                           <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Connexion" />
+                        <div class="form-group">
+                           <asp:Button class="btn btn-primary btn-block btn-lg w-100" ID="Button1" runat="server" Text="Connexion" />
                         </div>
-                        <div class="form-group mx-auto">
-                           <a href="usersignup.aspx"><input class="btn btn-dark btn-block btn-lg" id="Button2" type="button" value="Inscription" /></a>
+                         <div class="col">
+                        <hr>
+                     </div>
+                  </div>
+                        <div class="form-group">
+                           <a href="usersignup.aspx"><input class="btn btn-dark btn-block btn-lg w-100" id="Button2" type="button" value="Inscription" /></a>
                         </div>
                              </div>
                   </div>
