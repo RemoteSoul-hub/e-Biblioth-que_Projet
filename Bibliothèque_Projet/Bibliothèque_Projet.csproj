@@ -70,6 +70,7 @@
     <Content Include="accueil.aspx" />
     <Content Include="adminauthormanagement.aspx" />
     <Content Include="admincategorymanagement.aspx" />
+    <Content Include="bookstatuspage.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="css\customstylesheet.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
@@ -1768,6 +1769,13 @@
     </Compile>
     <Compile Include="admincategorymanagement.aspx.designer.cs">
       <DependentUpon>admincategorymanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookstatuspage.aspx.cs">
+      <DependentUpon>bookstatuspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookstatuspage.aspx.designer.cs">
+      <DependentUpon>bookstatuspage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">

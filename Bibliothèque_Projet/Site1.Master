@@ -94,7 +94,7 @@
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Inventaire de livres</asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Emprunts de livres</asp:LinkButton>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Gestion prêt/retour de livres</asp:LinkButton>
                             &nbsp;
                              <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Gestion des membres</asp:LinkButton>
                         </p>
