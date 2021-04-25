@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="accueil.aspx" />
+    <Content Include="adminauthormanagement.aspx" />
+    <Content Include="admincategorymanagement.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="css\customstylesheet.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
@@ -1752,6 +1754,20 @@
     </Compile>
     <Compile Include="accueil.aspx.designer.cs">
       <DependentUpon>accueil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminauthormanagement.aspx.cs">
+      <DependentUpon>adminauthormanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminauthormanagement.aspx.designer.cs">
+      <DependentUpon>adminauthormanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admincategorymanagement.aspx.cs">
+      <DependentUpon>admincategorymanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admincategorymanagement.aspx.designer.cs">
+      <DependentUpon>admincategorymanagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">

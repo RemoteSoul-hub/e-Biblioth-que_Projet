@@ -90,6 +90,8 @@
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Gestion d'auteurs</asp:LinkButton>
                             &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server">Gestion de catégories</asp:LinkButton>
+                            &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Inventaire de livres</asp:LinkButton>
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Emprunts de livres</asp:LinkButton>
