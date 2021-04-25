@@ -70,6 +70,7 @@
     <Content Include="accueil.aspx" />
     <Content Include="adminauthormanagement.aspx" />
     <Content Include="admincategorymanagement.aspx" />
+    <Content Include="bookinventory.aspx" />
     <Content Include="bookstatuspage.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="css\customstylesheet.css" />
@@ -1769,6 +1770,13 @@
     </Compile>
     <Compile Include="admincategorymanagement.aspx.designer.cs">
       <DependentUpon>admincategorymanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookinventory.aspx.cs">
+      <DependentUpon>bookinventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookinventory.aspx.designer.cs">
+      <DependentUpon>bookinventory.aspx</DependentUpon>
     </Compile>
     <Compile Include="bookstatuspage.aspx.cs">
       <DependentUpon>bookstatuspage.aspx</DependentUpon>
