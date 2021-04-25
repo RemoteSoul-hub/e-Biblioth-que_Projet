@@ -17,7 +17,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h3>Connexion - Membre</h3>
+                           <h3>Connexion - Bibliothécaire</h3>
                         </center>
                      </div>
                   </div>
@@ -28,17 +28,13 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <label>Nom Complet</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Nom Complet"></asp:TextBox>
+                         <label>Adresse Courriel</label>
+                         <div class="form-group">
+                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Votre adresse Courriel" TextMode="Email"></asp:TextBox>
                         </div>
                         <label>Mot de Passe</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Mot de Passe" TextMode="Password"></asp:TextBox>
-                        </div>
-                         <label>Adresse Courriel</label>
-                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Votre adresse Courriel" TextMode="email"></asp:TextBox>
                         </div>
                          <div class="row">
                      <div class="col">
