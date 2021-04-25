@@ -107,12 +107,6 @@
                            <asp:TextBox CssClass="form-control" ID="TextBox10" runat="server" placeholder="ISBN" TextMode="Number"></asp:TextBox>
                         </div>
                      </div>
-                     <div class="col-md-4">
-                        <label>Pages</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox11" runat="server" placeholder="Pages" TextMode="Number"></asp:TextBox>
-                        </div>
-                     </div>
                   </div>
                   <div class="row">
                      <div class="col-md-4">
