@@ -29,7 +29,7 @@
     <form id="form1" runat="server">
         <div>
             <nav class="navbar navbar-expand-lg navbar-light">
-                 <a class="navbar-brand" href="#">
+                 <a class="navbar-brand" href="accueil.aspx">
                     <img src="imgs/books.png" width="30" height="30" />
                     E-Bibliothèque
                 </a>

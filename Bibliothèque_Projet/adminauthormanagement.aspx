@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminauthormanagement.aspx.cs" Inherits="Bibliothèque_Projet.adminauthormanagement" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-  <script type="text/javascript">
+    <script type="text/javascript">
       $(document).ready(function () {
           $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
       });
