@@ -101,7 +101,20 @@ namespace Bibliothèque_Projet
 
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
+            Session["full_name"] = "";
+            Session["email"] = "";
+            Session["role"] = "";
+            LinkButton1.Visible = true; // lien connexion
+            LinkButton2.Visible = true; // lien inscription 
+            LinkButton3.Visible = false; // lien déconnexion 
+            LinkButton7.Visible = false; // lien bonjour utilisateur 
+            LinkButton6.Visible = true; // connexion admin 
+            LinkButton11.Visible = false; // lien gestion auteurs 
+            LinkButton5.Visible = false; // lien gestion catégories 
+            LinkButton8.Visible = false; // lien inventaire livres 
+            LinkButton9.Visible = false; // lien gestion livres 
 
+            Response.Redirect("accueil.aspx");
         }
 
         protected void LinkButton7_Click(object sender, EventArgs e)
