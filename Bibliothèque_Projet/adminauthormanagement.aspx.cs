@@ -54,7 +54,7 @@ namespace Bibliothèque_Projet
             }
             else
             {
-                Response.Write("<script>alert('Author does not exist');</script>");
+                Response.Write("<script>alert('Auteur n'existe pas');</script>");
             }
         }
         // Lien Trouver
