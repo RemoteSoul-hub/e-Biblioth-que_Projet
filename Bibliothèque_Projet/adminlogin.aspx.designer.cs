@@ -11,7 +11,7 @@ namespace Bibliothèque_Projet
 {
 
 
-    public partial class WebForm2
+    public partial class adminlogin
     {
 
         /// <summary>

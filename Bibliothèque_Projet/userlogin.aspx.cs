@@ -37,8 +37,12 @@ namespace Bibliothèque_Projet
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<script>alert('" + dr.GetValue(0).ToString() + "');</script>");
+                        Response.Write("<script>alert('Succès Connexion');</script>");
+                        Session["full_name"] = dr.GetValue(0).ToString();
+                        Session["email"] = dr.GetValue(1).ToString();
+                        Session["role"] = "user";
                     }
+                    Response.Redirect("accueil.aspx");
                 }
                 else
                 {
@@ -48,7 +52,7 @@ namespace Bibliothèque_Projet
             }
             catch (Exception ex)
             {
-
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
     }

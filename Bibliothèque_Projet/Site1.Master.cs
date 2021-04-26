@@ -11,7 +11,52 @@ namespace Bibliothèque_Projet
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (Session["role"]==null)
+                {
+                    LinkButton1.Visible = true; // lien connexion
+                    LinkButton2.Visible = true; // lien inscription 
+                    LinkButton3.Visible = false; // lien déconnexion 
+                    LinkButton7.Visible = false; // lien bonjour utilisateur 
+                    LinkButton6.Visible = true; // connexion admin 
+                    LinkButton11.Visible =false; // lien gestion auteurs 
+                    LinkButton5.Visible = false; // lien gestion catégories 
+                    LinkButton8.Visible = false; // lien inventaire livres 
+                    LinkButton9.Visible = false; // lien gestion livres 
+                }
+                else if(Session["role"].Equals("user"))
+                {
+                    LinkButton1.Visible = false; // lien connexion
+                    LinkButton2.Visible = false; // lien inscription 
+                    LinkButton3.Visible = true; // lien déconnexion 
+                    LinkButton7.Visible = true; // lien bonjour utilisateur 
+                    LinkButton7.Text = "Bonjour " + Session["full_name"].ToString();
+                    LinkButton6.Visible = true; // connexion admin 
+                    LinkButton11.Visible = false; // lien gestion auteurs 
+                    LinkButton5.Visible = false; // lien gestion catégories 
+                    LinkButton8.Visible = false; // lien inventaire livres 
+                    LinkButton9.Visible = false; // lien gestion livres 
+                }
+                else if (Session["role"].Equals("admin"))
+                {
+                    LinkButton1.Visible = false; // lien connexion
+                    LinkButton2.Visible = false; // lien inscription 
+                    LinkButton3.Visible = true; // lien déconnexion 
+                    LinkButton7.Visible = true; // lien bonjour utilisateur 
+                    LinkButton7.Text = "Compte Bibliothécaire en ligne";
+                    LinkButton6.Visible = false; // connexion admin 
+                    LinkButton11.Visible = true; // lien gestion auteurs 
+                    LinkButton5.Visible = true; // lien gestion catégories 
+                    LinkButton8.Visible = true; // lien inventaire livres 
+                    LinkButton9.Visible = true; // lien gestion livres 
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
+            
         }
 
         protected void LinkButton6_Click(object sender, EventArgs e)

@@ -55,7 +55,7 @@
                   </div>
                </div>
             </div>
-            <a href="accueil.aspx"><< Retour à la page d'accueil/a><br><br>
+            <a href="accueil.aspx"><< Retour à la page d'accueil </a><br><br>
          </div>
       </div>
 </asp:Content>
