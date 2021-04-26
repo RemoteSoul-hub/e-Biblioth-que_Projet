@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminlogin.aspx.cs" Inherits="Bibliothèque_Projet.WebForm2" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"></asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
+   <div class="container">
       <div class="row">
          <div class="col-md-6 mx-auto">
             <div class="card">
@@ -17,7 +16,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h3>Connexion - Bibliothécaire</h3>
+                           <h3>Admin Login</h3>
                         </center>
                      </div>
                   </div>
@@ -28,34 +27,23 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                         <label>Adresse Courriel</label>
+                       <label>Adresse Courriel</label>
                          <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Votre adresse Courriel" TextMode="Email"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Votre adresse Courriel" TextMode="Email"></asp:TextBox>
                         </div>
                         <label>Mot de Passe</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Mot de Passe" TextMode="Password"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Mot de Passe" TextMode="Password"></asp:TextBox>
                         </div>
-                         <div class="row">
-                     <div class="col">
-                        <hr>
-                     </div>
-                  </div>
                         <div class="form-group">
-                           <asp:Button class="btn btn-primary btn-block btn-lg w-100" ID="Button1" runat="server" Text="Connexion" />
+                           <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Connexion" OnClick="Button1_Click" />
                         </div>
-                         <div class="col">
-                        <hr>
                      </div>
-                  </div>
-                        <div class="form-group">
-                           <a href="usersignup.aspx"><input class="btn btn-dark btn-block btn-lg w-100" id="Button2" type="button" value="Inscription" /></a>
-                        </div>
-                             </div>
                   </div>
                </div>
             </div>
             <a href="accueil.aspx"><< Retour à la page d'accueil</a><br><br>
          </div>
       </div>
+   </div>
 </asp:Content>

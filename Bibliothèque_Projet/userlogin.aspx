@@ -42,7 +42,7 @@
                      </div>
                   </div>
                         <div class="form-group">
-                           <asp:Button class="btn btn-primary btn-block btn-lg w-100" ID="Button1" runat="server" Text="Connexion" />
+                           <asp:Button class="btn btn-primary btn-block btn-lg w-100" ID="Button1" runat="server" Text="Connexion" OnClick="Button1_Click" />
                         </div>
                          <div class="col">
                         <hr>
@@ -55,7 +55,7 @@
                   </div>
                </div>
             </div>
-            <a href="accueil.aspx"><< Retour à la page d'accueil</a><br><br>
+            <a href="accueil.aspx"><< Retour à la page d'accueil/a><br><br>
          </div>
       </div>
 </asp:Content>
