@@ -13,19 +13,19 @@ namespace Bibliothèque_Projet
         {
             try
             {
-                if (Session["role"]==null)
+                if (Session["role"] == null)
                 {
                     LinkButton1.Visible = true; // lien connexion
                     LinkButton2.Visible = true; // lien inscription 
                     LinkButton3.Visible = false; // lien déconnexion 
                     LinkButton7.Visible = false; // lien bonjour utilisateur 
                     LinkButton6.Visible = true; // connexion admin 
-                    LinkButton11.Visible =false; // lien gestion auteurs 
+                    LinkButton11.Visible = false; // lien gestion auteurs 
                     LinkButton5.Visible = false; // lien gestion catégories 
                     LinkButton8.Visible = false; // lien inventaire livres 
                     LinkButton9.Visible = false; // lien gestion livres 
                 }
-                else if(Session["role"].Equals("user"))
+                else if (Session["role"].Equals("user"))
                 {
                     LinkButton1.Visible = false; // lien connexion
                     LinkButton2.Visible = false; // lien inscription 
@@ -49,7 +49,7 @@ namespace Bibliothèque_Projet
                     LinkButton11.Visible = true; // lien gestion auteurs 
                     LinkButton5.Visible = true; // lien gestion catégories 
                     LinkButton8.Visible = true; // lien inventaire livres 
-                    LinkButton9.Visible = true; // lien gestion livres 
+                    LinkButton9.Visible = true; // lien gestion livres                 }
                 }
             }
             catch (Exception ex)
@@ -119,7 +119,7 @@ namespace Bibliothèque_Projet
 
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("userprofile.aspx");
         }
     }
 }
